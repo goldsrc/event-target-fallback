@@ -1,7 +1,7 @@
 {
-  "name": "event-target-polyfill",
-  "version": "0.0.3",
-  "description": "An EventTarget Polyfill",
+  "name": "event-target-fallback",
+  "version": "1.0.0",
+  "description": "An EventTarget Fallback",
   "main": "index.js",
   "exports": {
     ".": "./index.js"
@@ -13,16 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benlesh/event-target-polyfill.git"
+    "url": "git+https://github.com/goldsrc/event-target-fallback.git"
   },
   "keywords": [
     "EventTarget",
-    "Polyfill"
+    "Fallback",
+    "Polyfill",
+    "Shim"
   ],
-  "author": "Ben Lesh <ben@benlesh.com>",
+  "author": "Mohammad Beheshti <mbeheshtis@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/benlesh/event-target-polyfill/issues"
+    "url": "https://github.com/goldsrc/event-target-fallback/issues"
   },
-  "homepage": "https://github.com/benlesh/event-target-polyfill#readme"
+  "homepage": "https://github.com/goldsrc/event-target-fallback#readme"
 }

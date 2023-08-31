@@ -3,7 +3,7 @@ const root =
   (typeof self !== "undefined" && self) ||
   (typeof global !== "undefined" && global);
 
-const shouldPolyfillEvent = (function() {
+const shouldFallbackEvent = (function () {
   try {
     new root.Event("");
   } catch (error) {
@@ -12,7 +12,7 @@ const shouldPolyfillEvent = (function() {
   return false;
 })();
 
-const shouldPolyfillEventTarget = (function() {
+const shouldFallbackEventTarget = (function () {
   try {
     new root.EventTarget();
   } catch (error) {
@@ -21,12 +21,12 @@ const shouldPolyfillEventTarget = (function() {
   return false;
 })();
 
-if (shouldPolyfillEvent) {
+if (shouldFallbackEvent) {
   root.Event = (function () {
     function Event(type, options) {
-        this.bubbles = !!options && !!options.bubbles;
-        this.cancelable = !!options && !!options.cancelable;
-        this.composed = !!options && !!options.composed;
+      this.bubbles = !!options && !!options.bubbles;
+      this.cancelable = !!options && !!options.cancelable;
+      this.composed = !!options && !!options.composed;
       this.type = type;
     }
 
@@ -34,7 +34,7 @@ if (shouldPolyfillEvent) {
   })();
 }
 
-if (shouldPolyfillEventTarget) {
+if (shouldFallbackEventTarget) {
   root.EventTarget = (function () {
     function EventTarget() {
       this.__listeners = new Map();
