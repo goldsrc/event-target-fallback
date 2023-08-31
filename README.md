@@ -1,4 +1,4 @@
-![npm version](https://badge.fury.io/js/event-target-fallback.svg)](https://badge.fury.io/js/event-target-fallback)
+[![npm version](https://badge.fury.io/js/event-target-fallback.svg)](https://badge.fury.io/js/event-target-fallback)
 ![Node.js CI](https://github.com/goldsrc/event-target-fallback/actions/workflows/test-on-node.yml/badge.svg)
 
 # event-target-fallback
